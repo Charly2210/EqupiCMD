@@ -1,0 +1,154 @@
+create table semestres (id_semestre int primary key AUTO_INCREMENT, descripcion_sem varchar(20));
+create table estados (id_estado int primary key AUTO_INCREMENT , descripcion_est varchar(20));
+create table editoriales (id_editorial int primary key AUTO_INCREMENT, nombre_editorial varchar(50));
+create table autores (id_autor int primary key AUTO_INCREMENT, nombre varchar(50), apellido_pat varchar(50), apellido_mat varchar(50));
+create table tipos_libro (id_etipolibro int primary key AUTO_INCREMENT , descripicion_tipo varchar(20));
+create table carreras(id_carrera int primary key AUTO_INCREMENT, descripcion_carrera varchar(20));
+create table alumnos (id_alumno int primary key AUTO_INCREMENT, nombre varchar(20), apellido_pat varchar(20), apellido_mat varchar(20), id_semestre int, id_estado int, id_carrera int);
+create table docentes (id_docente int primary key AUTO_INCREMENT, nombre varchar(20), apellido_pat varchar(20), apellido_mat varchar(20), id_carrera int);
+create table libros(id_libro int primary key AUTO_INCREMENT ,código_barras varchar(20), titulo varchar(20), id_edicion int, existencias int, descripcion varchar(20), id_autor int, id_editorial int, id_tipo int,id_estado );
+create table estado_libro(id_estado int primary key AUTO_INCREMENT, descripcion);
+create table asignar_libro (id_asignarlib int primary key AUTO_INCREMENT, id_carrera int, id_libro int);
+create table prestamo (id_prestamo int primary key AUTO_INCREMENT , id_alumno int, id_libro int, fecha );
+create table edicion(id_edicion int primary key AUTO_INCREMENT,descripcion_edicion varchar(50));
+
+
+INSERT INTO carreras VALUES(1,'Enfermería ');
+INSERT INTO carreras VALUES('',' Criminología');
+INSERT INTO carreras VALUES('',' Contaduría');
+INSERT INTO carreras VALUES('',' Psicología industrial ');
+INSERT INTO carreras VALUES('',' Informática ');
+
+INSERT INTO semestres VALUES(10,'Primer semestre');
+INSERT INTO semestres VALUES('','Segundo semestre');
+INSERT INTO semestres VALUES('','Tercer semestre');
+INSERT INTO semestres VALUES('','Cuarto semestre');
+INSERT INTO semestres VALUES('','Quinto semestre');
+INSERT INTO semestres VALUES('','Sexto semestre');
+INSERT INTO semestres VALUES('','Séptimo semestre');
+INSERT INTO semestres VALUES('','Octavo semestre');
+INSERT INTO semestres VALUES('','Noveno semestre');
+
+INSERT INTO editoriales VALUES(20,'Miguel Ángel Porrúa');
+INSERT INTO editoriales VALUES('','PEARSON EDUCACIÓN');
+INSERT INTO editoriales VALUES('','Trillas');
+INSERT INTO editoriales VALUES('','Alfaomega');
+INSERT INTO editoriales VALUES('','Cengage Learning Editors');
+INSERT INTO editoriales VALUES('','Mc Graw Hill');
+INSERT INTO editoriales VALUES('','Patria');
+INSERT INTO editoriales VALUES('','IMCP(instituto mexicano de contadores públicos)');
+INSERT INTO editoriales VALUES('','Consejo Editorial de la Administración Pública Estatal');
+INSERT INTO editoriales VALUES('','PAC ( publicaciones administrativas jurídicas)');
+INSERT INTO editoriales VALUES('','Thomson');
+INSERT INTO editoriales VALUES('','Offset Azteca');
+INSERT INTO editoriales VALUES('','Limusa');
+INSERT INTO editoriales VALUES('','Banca y Comercio');
+INSERT INTO editoriales VALUES('','Pretince Hall');
+INSERT INTO editoriales VALUES('','Rayuela');
+INSERT INTO editoriales VALUES('','IPADE (instituto panamericano de alta dirección de empresa)');
+INSERT INTO editoriales VALUES('','Sista');
+INSERT INTO editoriales VALUES('','ISEF (instituto superior de estudios fiscales)');
+INSERT INTO editoriales VALUES('','Zeta');
+INSERT INTO editoriales VALUES('','Berbera editores');
+INSERT INTO editoriales VALUES('','Utheca ');
+INSERT INTO editoriales VALUES('','UMED');
+INSERT INTO editoriales VALUES('','ANAYA');
+INSERT INTO editoriales VALUES('','Apple computer');
+INSERT INTO editoriales VALUES('','Jit Press');
+INSERT INTO editoriales VALUES('','CAESE');
+INSERT INTO editoriales VALUES('','LIBROGRAF');
+INSERT INTO editoriales VALUES('','Computec');
+
+
+
+INSERT into tipos_libro VALUES(200,'Poesía');
+INSERT into tipos_libro VALUES('','Colección mayor');
+INSERT into tipos_libro VALUES('','Informátivo');
+INSERT into tipos_libro VALUES('','Semanario y gaceta');
+INSERT into tipos_libro VALUES('','Colección diversos');
+
+
+
+INSERT INTO edicion VALUES(300,'Primera');
+INSERT INTO edicion VALUES('','Duodécima');
+INSERT INTO edicion VALUES('','Séptima');
+INSERT INTO edicion VALUES('','Undécima');
+INSERT INTO edicion VALUES('','Novena');
+INSERT INTO edicion VALUES('','Sexta');
+INSERT INTO edicion VALUES('','Cuarta');
+INSERT INTO edicion VALUES('','Vigésima Segunda');
+INSERT INTO edicion VALUES('','Décima');
+INSERT INTO edicion VALUES('','Quinta');
+INSERT INTO edicion VALUES('','Undécima');
+INSERT INTO edicion VALUES('','43ava');
+INSERT INTO edicion VALUES('','Tercera');
+
+
+
+INSERT INTO autores VALUES('400','Redondo', 'Brígido','-');
+INSERT INTO autores VALUES('','Arreola','Ayala','Álvaro');
+INSERT INTO autores VALUES('','Maisto','Albert','A');
+INSERT INTO autores VALUES('','Morris','Charles','G');
+INSERT INTO autores VALUES('','Munch','Galindo','Lourdes');
+INSERT INTO autores VALUES('','Thomas','Jr','-');
+INSERT INTO autores VALUES('','George','B','-');
+INSERT INTO autores VALUES('','Hartzler','Meg','-'); 
+INSERT INTO autores VALUES('','Henry','E','Jane');
+INSERT INTO autores VALUES('','Artal','Castells','Manuel');
+INSERT INTO autores VALUES('','Rodríguez','Valencia','Joaquín');
+INSERT INTO autores VALUES('','Berenson', 'L','Mark');
+INSERT INTO autores VALUES('','David','M','Levine');
+INSERT INTO autores VALUES('','Budnick','S','Frank');
+INSERT INTO autores VALUES('','García','Munch','-');
+INSERT INTO autores VALUES('','Villalobos','José','Luis');
+INSERT INTO autores VALUES('','Munch','Lourdes','Sandoval Paloma');
+INSERT INTO autores VALUES('','Torres','Gustavo','-' );
+INSERT INTO autores VALUES('','Ricalde','Esperanza','-');
+INSERT INTO autores VALUES('','Mondy','Wayne','R');
+INSERT INTO autores VALUES('','M','Noe Robert','-');
+INSERT INTO autores VALUES('','Levin','Richard','-');
+INSERT INTO autores VALUES('','Rubin','David','S');
+INSERT INTO autores VALUES('','Whetten','A','David');
+INSERT INTO autores VALUES('','Cameron','S','Kim');
+INSERT INTO autores VALUES('','Lara','Flores','Elías');
+INSERT INTO autores VALUES('','Fernández','Moreno','Joaquín');
+INSERT INTO autores VALUES('','Del Río','González','Cristóbal');
+INSERT INTO autores VALUES('','Parkin','Michael','-');
+INSERT INTO autores VALUES('','Esquivel','Gerardo','-');
+INSERT INTO autores VALUES('','Muñoz','Mercedes','-');
+INSERT INTO autores VALUES('','Wheelen','L','TOMAS');
+INSERT INTO autores VALUES('','Hunger','Davd','L');
+INSERT INTO autores VALUES('','Díaz',' Mata', 'Alfredo');
+INSERT INTO autores VALUES('','Aguilera','Gómez',' Víctor');
+INSERT INTO autores VALUES('','Camacho','Miñano ','María del Mar');
+INSERT INTO autores VALUES('','Menéndez','Rivero','María José');
+INSERT INTO autores VALUES('','Alvarez', 'Niño' ,'Raúl');
+INSERT INTO autores VALUES('','Montoya','Pérez','José de Jesús');
+INSERT INTO autores VALUES('','Zamoranol',' García','Enrique');
+INSERT INTO autores VALUES('','Lara','Flores','Elías');
+INSERT INTO autores VALUES('','Lara','Ramírez','Leticia');
+INSERT INTO autores VALUES('','Aguirre','Navarro','Gustavo Amtonio');
+INSERT INTO autores VALUES('','Werther','B','-');
+INSERT INTO autores VALUES('','William','Jr','-');
+INSERT INTO autores VALUES('','Hanke','John','E');
+INSERT INTO autores VALUES('','Wichern','Dean','W');
+INSERT INTO autores VALUES('','Del Río','González','Cristóbal');
+INSERT INTO autores VALUES('','Guevara','Andraca','Armando');
+INSERT INTO autores VALUES('','Zorrilla','Arena','Santiago');
+INSERT INTO autores VALUES('','Mejia','Reyes','Pablo');
+INSERT INTO autores VALUES('','Del Moral','Berrera','Laura Elena');
+INSERT INTO autores VALUES('','Delfín','Serman','Hector');
+INSERT INTO autores VALUES('','Lara','Flores','Elías');
+
+
+
+
+
+
+
+
+
+
+
+
+

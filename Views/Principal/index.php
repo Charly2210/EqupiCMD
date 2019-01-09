@@ -6,7 +6,7 @@
         /* Make the image fully responsive */
         .carousel-inner img {
             width: 100%;
-            height: 70%;
+            height: 60%;
         }
     </style>
 </head>
@@ -14,8 +14,10 @@
 
 
 <div class="container mt-3">
+<div>
+    <h2 ALIGN="CENTER">BiblioTec</h2>
+</div>
 
-    <h2>BiblioTec</h2>
     <div id="myCarousel" class="carousel slide">
 
         <!-- Indicators -->
@@ -28,10 +30,10 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="Public/img/libros20.jpg" alt="Los Angeles" width="1000" height="500">
+                <img src="Public/img/libros21.jpg" alt="Los Angeles" width="1000" height="500">
             </div>
             <div class="carousel-item">
-                <img src="Public/img/libros21.jpg" alt="Chicago" width="1000" height="500">
+                <img src="Public/img/libros18.jpg" alt="Chicago" width="1000" height="500">
             </div>
             <div class="carousel-item">
                 <img src="Public/img/libros19.jpg" alt="New York" width="1000" height="500">

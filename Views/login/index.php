@@ -89,9 +89,9 @@
     }
 
 </style>
-<html>
-<body>
 
+<body id="LoginForm">
+<h1 class="form-heading"></h1>
 <div class="container center">
     <div>
         <h5 class="red-text">
@@ -101,38 +101,38 @@
     <div class="container">
 
         <div class="login-form">
-            <div class="main-div">
+            <div class="panel">
                 <form method="post" action="<?php echo URL?>login/Verify">
                     <div class="panel">
-                        <h3>Inicio de Sesión</h3>
-                        <p>Por favor ingresa tu e-mail y contraseña</p>
+                        <h3 align="center" text color="blue">Inicio de Sesión</h3>
+                        <p><h5 textcolor="blue">Por favor ingresa tu e-mail y contraseña</h5></p>
                     </div>
                     <div class='form-group'>
-                        <div class='input-field col s12'>
-                            <input  value="" placeholder="Email" type='email' name='nickname' id='nickname' REQUIRED>
+                        <div class='input-field col s15'>
+                           <h5> <input  value="" placeholder="Email" type='email' name='nickname' id='nickname' REQUIRED></h5>
                         </div>
-                    </div>
 
-                    <div class='form-group'>
+
                         <div class='input-field col s12'>
-                            <input  value="" placeholder="Contraseña" type='password' name='pass' id='pass'REQUIRED>
+                           <h5 > <input  value="" placeholder="Contraseña" type='password' name='pass' id='pass'REQUIRED></h5>
                         </div>
-                    </div>
 
                     <br />
-                        <div class='row'>
-                            <button type='submit' name='btn_login'><b>Entrar</b></button>
+                        <div class="form-group">
+                            <h3 align="center"><button class="btn btn-outline-primary " type='submit' name='btn_login'>Entrar.</button></h3>
                         </div>
 
 
-                    <p class="text text-black-50 mx-auto mt-2 mb-10">¿Aún no tienes cuenta con nosotros?</p>
-                    <a  href="<?php echo URL?>personas" class="btn btn-outline-primary " id="signin">Registrate</a>
+
+                    <p class="text text-black-50 "><h5>¿Aún no tienes cuenta con nosotros?</h5></p>
+                    <h3 align="center"><a  href="<?php echo URL?>personas" class="btn btn-outline-primary " id="signin">Registra </a></h3>
+
+                    </div>
                 </form>
             </div>
         </div>
     </div>
-</div>
 
 
 </body>
-</html>
+

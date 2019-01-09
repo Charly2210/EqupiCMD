@@ -15,20 +15,20 @@
     <div class="row">
         <div class="col-lg-4">
             <img class="img-circle" src="Public/img/libros7.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <h2>Maricruz Valdez Camacho</h2>
+            <p>Estudiante de Ingenieria en sistemas Computacionales,Encargada del diseño de la pagina web.</p>
 
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <img class="img-circle" src="Public/img/libros10.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <h2>Diego Carbajal Venteño</h2>
+            <p>Estudiante de Ingenieria en sistemas Computacionales,Encargado de la programaciòn de la pagina web.</p>
 
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <img class="img-circle" src="Public/img/libros21.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <h2>Juan Carlos Cruz Blanca</h2>
+            <p>Estudiante de Ingenieria en sistemas Computacionales,Encargado de la Gestion de la base de datos con el sistema</p>
 
     </div><!-- /.row -->
 
@@ -43,13 +43,11 @@
             <br>
 
 
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading"> .......<span class="text-muted">Informaciòn Adicional........</span></h2>
+            <p class="lead">Maricruz Valdez Camacho es una estudiante perteneciente a la universidad del Tècnologico de estudios Superiores de Vallde de Bravo,Su lugar de recidencia es San martin Obispo,con una edad de 21 años.</p>
         </div>
 
         <div class="col-md-5">
-            <br>
-            <br>
 
 
             <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="Public/img/libros16.jpg" data-holder-rendered="true">
@@ -60,8 +58,8 @@
 
     <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading"><span class="text-muted"></span></h2>
+            <p class="lead">Diego Carvajal Venteño es un estudiante perteneciente a la universidad del Tècnologico de estudios Superiores de Vallde de Bravo,Su lugar de recidencia es Villa Victoria,con una edad de 21 años</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
             <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="Public/img/libros4.jpg" data-holder-rendered="true">
@@ -72,8 +70,8 @@
 
     <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading"> <span class="text-muted"></span></h2>
+            <p class="lead">Juan Carlos Cruz Blanca es un estudiante perteneciente a la universidad del Tècnologico de estudios Superiores de Vallde de Bravo,Su lugar de recidencia es Valle de Bravo,con una edad de 21 años</p>
         </div>
         <div class="col-md-5">
             <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="Public/img/libros6.jpg" data-holder-rendered="true">
